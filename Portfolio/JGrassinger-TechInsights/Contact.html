@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Insights-Contact Us</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  <p>Your Source for Technology News and Reviews</p>
+  <img src="images/TechLogo.jpg" alt="Tech Insights Logo" width="200">
+  </header>
+
+  <nav>
+  <a href="index.html" target="index.html">Home</a>-
+  <a href="Comparison.html" target="Comparison.html">Comparisons</a>-
+  <a href="Contact.html" target="Contact.html">Contact Us</a>
+  </nav>
+  <br>
+  <br>
+
+  <form action="submit-contact.php" method="post">
+    <fieldset>
+      <legend>Your Information</legend>
+    <label for="fullname">Full Name:<span class=required></span></label>
+    <input type="text" id="fullname" name="full name" required>
+    <br>
+
+    <label for="email">Email Address:<span class="required"></span></label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Your Inquiry</legend>
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject" required>
+      <option value="">--Select--</option>
+      <option value="General Question">General Question</option>
+      <option value="Tech Support">Technical Support</option>
+      <option value="Product Review Request">Product Review Request</option>
+      <option value="Partnership Opportunity">Partnership Opportunity</option>
+    </select>
+    <br>
+
+    <label for="message">Message:</label>
+    <br>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Communication Preferences</legend>
+      <input type="checkbox" id="newsletter" name="newsletter">
+      <label for="newsletter">Subscribe to our newsletter</label>
+      <br>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I agree to the Terms and Conditions</label>
+    </fieldset>
+    <br>
+
+    <button type="Submit">Send Message</button>
+  </form>
+  <br>
+  <br>
+
+  <footer>
+  <div class="footer-content">
+    <h3>Connect</h3>
+    <p>Follow us on social media!</p>
+    <p>
+    <a href="#" target="#">LinkedIn</a>
+    <a href="#" target="#">Instagram</a>
+    <a href="#" target="#">Twitter</a>
+    <a href="mailto:info@techinsights.com">Email Us</a>
+  </p>
+  </div>
+  <p class="copyright">&copy; 2025 Tech Insights. All rights reserved.</p>
+  </footer>
+</body>
+</html>
